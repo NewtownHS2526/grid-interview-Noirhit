@@ -1,4 +1,41 @@
 .container {
-    display: grid;
-    /* style the columns and rows here */
-  }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 150px);
+  gap: 10px;
+}
+
+.container div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.2em;
+  transition: transform 0.3s ease;
+}
+
+
+.winter {
+  background-color: #5dade2; 
+}
+
+.spring {
+  background-color: #58d68d; 
+}
+
+.summer {
+  background-color: #f7dc6f; 
+  color: #333;
+}
+
+.fall{
+  background-color: #eb984e;
+}
+
+/* Hover effect */
+.container div:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
